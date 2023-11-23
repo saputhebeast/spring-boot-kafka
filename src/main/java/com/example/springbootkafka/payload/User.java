@@ -3,6 +3,16 @@ package com.example.springbootkafka.payload;
 public class User {
     private int id;
     private String firstName;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
     private String lastName;
 
     public int getId() {
